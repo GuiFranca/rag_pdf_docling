@@ -22,7 +22,7 @@ llm_client = None
 
 @st.cache_resource
 def initialize_llm():
-    initialized_llm = Ollama(model="llama3.2", request_timeout=120.0)
+    initialized_llm = Ollama(model="deepseek-r1:7b", request_timeout=120.0)
     return initialized_llm
 
 def clear_chat_history():
